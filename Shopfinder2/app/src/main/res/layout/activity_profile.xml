@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#f4f4f4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Profile Picture -->
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_launcher_foreground"
+            android:contentDescription="Profile Picture"
+            android:layout_marginBottom="20dp"
+            android:scaleType="centerCrop" />
+
+        <!-- EditText for Old Email -->
+        <EditText
+            android:id="@+id/edit_old_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your old email"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edit_text_background" />
+
+        <!-- EditText for New Email -->
+        <EditText
+            android:id="@+id/edit_new_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your new email"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edit_text_background" />
+
+        <!-- EditText for Phone -->
+        <EditText
+            android:id="@+id/edit_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your phone number"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"
+            android:inputType="phone"
+            android:background="@drawable/edit_text_background" />
+
+        <!-- EditText for Password -->
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your password"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:inputType="textPassword"
+            android:background="@drawable/edit_text_background" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Profile"
+            android:background="#1976D2"
+            android:textColor="#ffffff"
+            android:padding="14dp"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>

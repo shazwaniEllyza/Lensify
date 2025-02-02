@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#f0f0f0">
+
+    <!-- Image for About Us Section -->
+    <ImageView
+        android:id="@+id/about_us_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/img_1"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Title: About Us -->
+    <TextView
+        android:id="@+id/about_us_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textSize="24sp"
+        android:textColor="#1976D2"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Description Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lensify wants to make this process easier by providing a user-friendly mobile platform for searching, comparing, and discovering photography studios. Lensify helps users identify professional photographers that meet their criteria for weddings, portraits, corporate events, and product photos, saving them time and effort in the search process."
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:lineSpacingExtra="5dp"
+        android:layout_marginBottom="20dp" />
+
+
+
+    <!-- WebView to display external content -->
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp" />
+</LinearLayout>
